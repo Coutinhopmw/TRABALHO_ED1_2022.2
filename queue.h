@@ -13,6 +13,7 @@ int Queue_head(Queue*, No*);
 int Queue_full(Queue*);
 int Queue_empty(Queue*);
 int Queue_qty(Queue*);
+int Queue_prints(Queue*);
 
 
 

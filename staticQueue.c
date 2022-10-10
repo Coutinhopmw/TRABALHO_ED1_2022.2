@@ -1,5 +1,6 @@
 #include "Queue.h"
 #include <stdlib.h>
+#include <stdio.h>
 #define MAX 10
 /**
  * qty = Contador da quantidade de elementos na fila.
@@ -82,6 +83,12 @@ int Queue_head(Queue *way, No *info)
     }
     *info = way->data[way->head];
     return 1;
+}
+int Queue_prints(Queue *way){
+    int i;
+    for(i=way->head % MAX;i<way->tail%MAX;i++){
+        printf("%s", (way->data)->nome);
+    }
 }
 /*==============================================
     FUNÇÕES AUXILIARES
